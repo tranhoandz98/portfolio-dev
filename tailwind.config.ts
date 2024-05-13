@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss"
+const colors = require('tailwindcss/colors')
 
 const config = {
   darkMode: ["class"],
@@ -29,8 +30,12 @@ const config = {
           foreground: "hsl(var(--primary-foreground))",
         },
         info: {
-          DEFAULT: "hsl(var(--info))",
-          foreground: "hsl(var(--info-foreground))",
+          DEFAULT: '#16f2b3',
+          foreground: '#16f2b3',
+        },
+        help: {
+          DEFAULT: colors.pink[500],
+          foreground: colors.pink[500],
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -55,6 +60,38 @@ const config = {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
+        },
+        gradient:{
+          DEFAULT: colors.violet[600],
+          foreground: colors.violet[600],
+        },
+        'section-title':{
+          DEFAULT: colors.indigo[950],
+          foreground: colors.indigo[950],
+        },
+        'code-pink':{
+          DEFAULT: colors.pink[500],
+          foreground: colors.pink[500],
+        },
+        'code-gray':{
+          DEFAULT: colors.gray[400],
+          foreground: colors.gray[400],
+        },
+        'code-amber':{
+          DEFAULT: colors.amber[300],
+          foreground: colors.amber[300],
+        },
+        'code-orange':{
+          DEFAULT: colors.orange[400],
+          foreground: colors.orange[400],
+        },
+        'code-cyan':{
+          DEFAULT: colors.cyan[400],
+          foreground: colors.cyan[400],
+        },
+        'code-green':{
+          DEFAULT: colors.green[400],
+          foreground: colors.green[400],
         },
       },
       borderRadius: {

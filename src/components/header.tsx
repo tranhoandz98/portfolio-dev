@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <header className="container">
       <div className="flex justify-between items-center py-6">
-        <div className="font-bold text-3xl text-info">Tran Hoan</div>
+        <div className="font-bold text-3xl text-info">tranhoandz98</div>
         <div className="flex items-center gap-4">
           <ul className="text-sm gap-4 hidden md:flex">
             {MENU_DATA.map((menu) => (
