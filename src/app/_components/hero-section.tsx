@@ -89,7 +89,7 @@ export default function HeroSection() {
             <Link href={personalData.resume} target="_blank">
               <Button
                 size={"lg"}
-                className="text-white uppercase bg-gradient-to-r from-gradient to-help rounded-full transition-all duration-200 ease-out gap-2 hover:gap-3 md:h-12"
+                className="text-color uppercase bg-gradient-to-r from-gradient to-help rounded-full transition-all duration-200 ease-out gap-2 hover:gap-3 md:h-12"
               >
                 <ArrowDownToLine size={16} />
                 Get resume
@@ -118,17 +118,17 @@ export default function HeroSection() {
                 </div>
                 <div>
                   <span className="ml-12 lg:ml-24 text-code-cyan">this.</span>
-                  <span className="mr-2 text-white">hardWorker</span>
+                  <span className="mr-2 ">hardWorker</span>
                   <span className="text-code-amber">&amp;&amp;</span>
                 </div>
                 <div>
                   <span className="ml-12 lg:ml-24 text-code-cyan">this.</span>
-                  <span className="mr-2 text-white">problemSolver</span>
+                  <span className="mr-2 ">problemSolver</span>
                   <span className="text-code-amber">&amp;&amp;</span>
                 </div>
                 <div>
                   <span className="ml-12 lg:ml-24 text-code-cyan">this.</span>
-                  <span className="mr-2 text-white">skills.length</span>
+                  <span className="mr-2 ">skills.length</span>
                   <span className="mr-2 text-code-amber">&gt;=</span>
                   <span className="text-code-orange">5</span>
                 </div>

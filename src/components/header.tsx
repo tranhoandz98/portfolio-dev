@@ -7,7 +7,7 @@ import { MENU_DATA } from "@/constants/menu";
 export default function Header() {
  
   return (
-    <header className="container">
+    <header className="mx-auto px-6 sm:px-12 lg:max-w-[70rem] xl:max-w-[76rem] 2xl:max-w-[92rem]">
       <div className="flex justify-between items-center py-6">
         <div className="font-bold text-3xl text-info">tranhoandz98</div>
         <div className="flex items-center gap-4">

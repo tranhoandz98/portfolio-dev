@@ -11,11 +11,22 @@ const config = {
 	],
   prefix: "",
   theme: {
+    // container: {
+    //   center: true,
+    //   padding: "2rem",
+    //   screens: {
+    //     "2xl": "1400px",
+    //   },
+    // },
     container: {
       center: true,
-      padding: "2rem",
-      screens: {
-        "2xl": "1400px",
+      padding: {
+        DEFAULT: "1rem",
+        sm: "2rem",
+        lg: "3rem",
+        xl: "4rem",
+        "2xl": "4rem",
+        "3xl": "5rem",
       },
     },
     extend: {
@@ -30,12 +41,12 @@ const config = {
           foreground: "hsl(var(--primary-foreground))",
         },
         info: {
-          DEFAULT: '#16f2b3',
-          foreground: '#16f2b3',
+          DEFAULT: "var(--info)",
+          foreground: "var(--info)",
         },
         help: {
-          DEFAULT: colors.pink[500],
-          foreground: colors.pink[500],
+          DEFAULT: "var(--help)",
+          foreground: "var(--help)",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -61,37 +72,53 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        'card-border': {
+          DEFAULT: "var(--card-border)",
+          foreground: "var(--card-border)",
+        },
+        'card-border-device': {
+          DEFAULT: "var(--card-border-device)",
+          foreground: "var(--card-border-device)",
+        },
+        'card-gradient1': {
+          DEFAULT: "var(--gradient1)",
+          foreground: "var(--gradient1)",
+        },
+        'card-gradient2': {
+          DEFAULT: "var(--gradient2)",
+          foreground: "var(--gradient2)",
+        },
         gradient:{
-          DEFAULT: colors.violet[600],
-          foreground: colors.violet[600],
+          DEFAULT: "var(--gradient)",
+          foreground: "var(--gradient)",
         },
         'section-title':{
-          DEFAULT: colors.indigo[950],
-          foreground: colors.indigo[950],
+          DEFAULT: "var(--section-title)",
+          foreground: "var(--section-title)",
         },
         'code-pink':{
-          DEFAULT: colors.pink[500],
-          foreground: colors.pink[500],
+          DEFAULT: "var(--pink)",
+          foreground: "var(--pink)",
         },
         'code-gray':{
-          DEFAULT: colors.gray[400],
-          foreground: colors.gray[400],
+          DEFAULT: "var(--gray)",
+          foreground: "var(--gray)",
         },
         'code-amber':{
-          DEFAULT: colors.amber[300],
-          foreground: colors.amber[300],
+          DEFAULT: "var(--amber)",
+          foreground: "var(--amber)",
         },
         'code-orange':{
-          DEFAULT: colors.orange[400],
-          foreground: colors.orange[400],
+          DEFAULT: "var(--orange)",
+          foreground: "var(--orange)",
         },
         'code-cyan':{
-          DEFAULT: colors.cyan[400],
-          foreground: colors.cyan[400],
+          DEFAULT: "var(--cyan)",
+          foreground: "var(--cyan)",
         },
         'code-green':{
-          DEFAULT: colors.green[400],
-          foreground: colors.green[400],
+          DEFAULT: "var(--green)",
+          foreground: "var(--green)",
         },
       },
       borderRadius: {
@@ -112,6 +139,9 @@ const config = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+      },
+      screens: {
+        "4k": "1980px",
       },
     },
   },

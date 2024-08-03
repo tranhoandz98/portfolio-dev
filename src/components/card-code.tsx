@@ -13,7 +13,7 @@ export default function CardCode({
   dataOther,
 }: Props) {
   return (
-    <div className="from-[#0d1224] border-[#1b2c68a0] relative rounded-lg border bg-gradient-to-r to-[#0a0d37]">
+    <div className="border-card-border relative rounded-lg border bg-gradient-to-r from-card-gradient2 to-card-gradient1">
       <div className="flex flex-row">
         <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-help to-gradient"></div>
         <div className="h-[1px] w-full bg-gradient-to-r from-gradient to-transparent"></div>
@@ -21,18 +21,18 @@ export default function CardCode({
       <div className="px-4 lg:px-8 py-5 flex items-center">
         <div className="flex flex-row space-x-2">
           <div className="h-3 w-3 rounded-full bg-red-400"></div>
-          <div className="h-3 w-3 rounded-full bg-orange-400"></div>
+          <div className="h-3 w-3 rounded-full bg-orange"></div>
           <div className="h-3 w-3 rounded-full bg-green-200"></div>
         </div>
         <div className="text-info text-center grow lg:text-xl">{title}</div>
       </div>
-      <div className="overflow-hidden border-t-[2px] border-indigo-900 px-4 lg:px-8 py-4 lg:py-8">
+      <div className="overflow-hidden border-t-[2px] border-card-border-device px-4 lg:px-8 py-4 lg:py-8">
         <code className="font-mono text-xs md:text-sm lg:text-base">
           <div className="blink">
             <span className="mr-2 text-code-pink">const</span>
-            <span className="mr-2 text-white">{nameConst}</span>
+            <span className="mr-2 ">{nameConst}</span>
             <span className="mr-2 text-code-pink">=</span>
-            <span className="text-gray-400">{"{"}</span>
+            <span className="text-gray">{"{"}</span>
           </div>
           {dataCode &&
             Object.keys(dataCode).map((key, index) => {
@@ -43,7 +43,7 @@ export default function CardCode({
                 case "string":
                   htmlRes = (
                     <div>
-                      <span className="ml-4 lg:ml-8 mr-2 text-white">
+                      <span className="ml-4 lg:ml-8 mr-2 ">
                         {key}:
                       </span>
                       <span className="text-code-gray">{`'`}</span>
@@ -55,7 +55,7 @@ export default function CardCode({
                 case "boolean":
                   htmlRes = (
                     <div>
-                      <span className="ml-4 lg:ml-8 mr-2 text-white">
+                      <span className="ml-4 lg:ml-8 mr-2 ">
                         {key}:
                       </span>
                       <span className="text-code-orange">
@@ -70,7 +70,7 @@ export default function CardCode({
                   if (checkArr) {
                     htmlRes = (
                       <div className="ml-4 lg:ml-8 mr-2">
-                        <span className=" text-white">{key}: </span>
+                        <span className=" ">{key}: </span>
                         <span className="text-code-gray">{`[`}</span>
                         {valueRes.map((item, index) => {
                           if (index === valueRes.length -1) {
@@ -102,7 +102,7 @@ export default function CardCode({
             })}
           {dataOther}
           <div>
-            <span className="text-gray-400">{"}"}</span>
+            <span className="text-gray">{"}"}</span>
           </div>
         </code>
       </div>

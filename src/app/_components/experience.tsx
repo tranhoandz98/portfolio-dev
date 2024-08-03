@@ -12,7 +12,7 @@ import { Briefcase } from "lucide-react";
 
 export default function Experience() {
   return (
-    <div id={MENU_DATA_KEY.EXPERIENCE} className="relative z-50 border-t py-12">
+    <div id={MENU_DATA_KEY.EXPERIENCE} className="relative z-50 border-t pt-12">
       <Image
         src={section}
         alt="Hero"
@@ -47,7 +47,7 @@ export default function Experience() {
                         </p>
                       </div>
                       <div className="flex items-center gap-x-8 px-3 py-5">
-                        <div className="text-violet-500  transition-all duration-300 hover:scale-125">
+                        <div className="text-gradient  transition-all duration-300 hover:scale-125">
                           <Briefcase size={36}/>
                         </div>
                         <div>
