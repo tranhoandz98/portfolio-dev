@@ -11,8 +11,7 @@ import TitleSectionVertical from '@/components/title-sectio-vertical';
 
 export default function Education() {
   return (
-    <div id={MENU_DATA_KEY.EDUCATION}>
-      <div id="education" className="relative z-50 border-t my-12 lg:my-24 border-gradient2">
+      <div id={MENU_DATA_KEY.EDUCATION}className="relative z-50 border-t my-12 lg:my-24 border-gradient2">
       <Image
         src="/section.svg"
         alt="Hero"
@@ -74,7 +73,6 @@ export default function Education() {
           </div>
         </div>
       </div>
-    </div>
     </div>
   )
 }

@@ -8,20 +8,15 @@ type EducationType = {
 export const educations: EducationType[] = [
   {
     id: 1,
-    title: "Bachelor Degree",
-    duration: "2020 - Present",
-    institution: "National University of Bangladesh",
+    title: "E-Commerce",
+    duration: "2017 - 2020",
+    institution: "Hanoi College of Commerce and Tourism National",
   },
   {
     id: 2,
-    title: "Higher Secondary Certificate",
-    duration: "2018 - 2020",
-    institution: "Noakhali Islamia Kamil Madrasah",
+    title: " PHP Programing",
+    duration: "2019 - 2020",
+    institution: "Bachkhoa-Aptech International IT Training System.",
   },
-  {
-    id: 3,
-    title: "Secondary School Certificate",
-    duration: "2008 - 2018",
-    institution: "Baitus Saif Islamia Madrasah",
-  },
+  
 ];

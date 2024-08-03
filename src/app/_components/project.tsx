@@ -5,8 +5,7 @@ import React from 'react'
 
 export default function Projects() {
   return (
-    <div id={MENU_DATA_KEY.PROJECTS}>
-      <div id='projects' className="relative z-50  my-12 lg:my-24">
+      <div id={MENU_DATA_KEY.PROJECTS} className="relative z-50  my-12 lg:my-24">
       <div className="sticky top-10">
         <div className="w-[80px] h-[80px] bg-section-title rounded-full absolute -top-3 left-0 translate-x-1/2 filter blur-3xl  opacity-30"></div>
         <div className="flex items-center justify-start relative">
@@ -32,7 +31,6 @@ export default function Projects() {
           ))}
         </div>
       </div>
-    </div>
     </div>
   )
 }
