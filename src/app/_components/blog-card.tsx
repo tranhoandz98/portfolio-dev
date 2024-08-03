@@ -1,24 +1,25 @@
 // @flow strict
-import { timeConverter } from '@/lib/time-converter';
-import Image from 'next/image';
-import Link from 'next/link';
-import { BsHeartFill } from 'react-icons/bs';
-import { FaCommentAlt } from 'react-icons/fa';
+import { timeConverter } from "@/lib/time-converter";
+import { BlogCardProps } from "@/types/blog";
+import Image from "next/image";
+import Link from "next/link";
+import { BsHeartFill } from "react-icons/bs";
+import { FaCommentAlt } from "react-icons/fa";
 
-function BlogCard({ blog }) {
 
+type Props = {
+  blog: BlogCardProps;
+};
+function BlogCard({ blog }: Props) {
   return (
-    <div className="border border-gradient1 hover:border-gradient2 transition-all duration-500 bg-gradient2 rounded-lg relative group"
-    >
+    <div className="border border-gradient1 hover:border-gradient2 transition-all duration-500 bg-gradient2 rounded-lg relative group">
       <div className="h-44 lg:h-52 w-auto cursor-pointer overflow-hidden rounded-t-lg">
-        
         <Image
-          src={blog?.cover_image ?? blog.social_image
-          }
+          src={blog?.cover_image ?? blog.social_image}
           height={1080}
           width={1920}
           alt=""
-          className='h-full w-full group-hover:scale-110 transition-all duration-300'
+          className="h-full w-full group-hover:scale-110 transition-all duration-300"
         />
       </div>
       <div className="p-2 sm:p-3 flex flex-col">
@@ -29,23 +30,23 @@ function BlogCard({ blog }) {
               <BsHeartFill />
               <span>{blog.public_reactions_count}</span>
             </p>
-            {blog.comments_count > 0 &&
+            {blog.comments_count > 0 && (
               <p className="flex items-center gap-1">
                 <FaCommentAlt />
                 <span>{blog.comments_count}</span>
               </p>
-            }
+            )}
           </div>
         </div>
-        <Link target='_blank' href={blog.url}>
-          <p className='my-2 lg:my-3 cursor-pointer text-lg  sm:text-xl font-medium hover:text-gradient'>
+        <Link target="_blank" href={blog.url}>
+          <p className="my-2 lg:my-3 cursor-pointer text-lg  sm:text-xl font-medium hover:text-gradient">
             {blog.title}
           </p>
         </Link>
-        <p className='mb-2 text-sm text-info'>
+        <p className="mb-2 text-sm text-info">
           {`${blog.reading_time_minutes} Min Read`}
         </p>
-        <p className='text-sm lg:text-base text-gray pb-3 lg:pb-6 line-clamp-3'>
+        <p className="text-sm lg:text-base text-gray pb-3 lg:pb-6 line-clamp-3">
           {blog.description}
         </p>
         {/* <div className="">
@@ -58,6 +59,6 @@ function BlogCard({ blog }) {
       </div>
     </div>
   );
-};
+}
 
 export default BlogCard;

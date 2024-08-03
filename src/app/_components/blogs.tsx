@@ -5,8 +5,12 @@ import BlogCard from "./blog-card";
 import { FaArrowRight } from "react-icons/fa";
 import TitleSectionVertical from "@/components/title-sectio-vertical";
 import { Button } from "@/components/ui/button";
+import { BlogCardProps } from "@/types/blog";
 
-export default function Blogs({ blogs }) {
+type Props = {
+  blogs: BlogCardProps[]
+}
+export default function Blogs({ blogs }: Props) {
   return (
     <div
       id={MENU_DATA_KEY.BLOGS}

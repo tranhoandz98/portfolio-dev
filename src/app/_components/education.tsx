@@ -4,6 +4,7 @@ import Image from 'next/image'
 import React from 'react'
 
 import { BsPersonWorkspace } from "react-icons/bs";
+// @ts-ignore
 import lottieFile from '/public/lottie/study.json';
 import GlowCard from '@/components/glow-card';
 import { educations } from '@/data/educations';
